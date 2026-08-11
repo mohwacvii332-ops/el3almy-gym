@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL3almy Gym | حديد. التزام. نتائج.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="nav-logo">EL<span class="neon3">3</span>almy <span style="font-size:11px;letter-spacing:3px;color:var(--text-dim);margin-right:6px;">GYM</span></div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#pricing">الاشتراكات</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </nav>
+    <a href="#pricing" class="nav-cta">اشترك الآن</a>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1 class="hero-logo">EL<span class="neon3">3</span>almy<span class="hero-sub-gym">GYM</span></h1>
+    <p class="hero-tag">مفيش اختصارات هنا. <strong>حديد حقيقي، تمرين حقيقي، نتيجة حقيقية.</strong></p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn btn-primary">شوف الاشتراكات</a>
+      <a href="#contact" class="btn btn-ghost">تواصل معانا</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span>EL3almy GYM</span><span>EL3almy GYM</span><span>EL3almy GYM</span><span>EL3almy GYM</span>
+    <span>EL3almy GYM</span><span>EL3almy GYM</span><span>EL3almy GYM</span><span>EL3almy GYM</span>
+  </div>
+</div>
+
+<section class="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80" alt="جيم EL3almy">
+      <div class="tag"><b>+15</b><span>جهاز حديد ثقيل</span></div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">مين إحنا</span>
+      <h2>هنا بيتبني <em>الحديد</em>، مش الكلام</h2>
+      <p>EL3almy Gym مش مجرد صالة، ده مكان اتبنى عشان اللي جاي يشتغل بجد. حديد ثقيل، مساحة واسعة، وجو تمرين حقيقي من غير أي حاجة زيادة.</p>
+      <p>سواء أول مرة تدخل جيم أو بتلعب من سنين، عندنا الأدوات والخبرة اللي تخليك توصل للهدف بتاعك بأسرع وقت ممكن.</p>
+      <div class="about-stats">
+        <div><b>+300</b><span>مشترك حاليًا</span></div>
+        <div><b>24/7</b><span>مواعيد مرنة</span></div>
+        <div><b>Omar</b><span>كوتش برايفت معتمد</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">الاشتراكات</span>
+      <h2 class="section-title">اختار الباقة اللي تناسبك</h2>
+      <p class="section-desc">من الاشتراك العادي لحد التدريب الخاص وجهًا لوجه مع الكوتش.</p>
+    </div>
+    <div class="plans">
+
+      <div class="plan reveal">
+        <div class="plan-name">اشتراك حديد</div>
+        <div class="plan-desc">دخول كامل لصالة الحديد والأجهزة.</div>
+        <div class="plan-price">200<span> جنيه / شهريًا</span></div>
+        <div class="plan-note">بدون التزام لمدة معينة</div>
+        <ul class="plan-features">
+          <li>دخول لكل أجهزة الحديد</li>
+          <li>مواعيد مفتوحة</li>
+          <li>متابعة أساسية من المدربين</li>
+        </ul>
+        <a href="#payment" class="btn btn-primary" onclick="selectPlan('اشتراك حديد', '200')">اشترك دلوقتي</a>
+      </div>
+
+      <div class="plan reveal">
+        <div class="plan-name">حديد + تخسيس</div>
+        <div class="plan-desc">حديد كامل + برنامج تخسيس ومتابعة غذائية.</div>
+        <div class="plan-price">350<span> جنيه / شهريًا</span></div>
+        <div class="plan-note">الأكتر طلبًا</div>
+        <ul class="plan-features">
+          <li>كل مميزات اشتراك الحديد</li>
+          <li>برنامج تخسيس مخصص</li>
+          <li>متابعة دورية للنتائج</li>
+        </ul>
+        <a href="#payment" class="btn btn-primary" onclick="selectPlan('حديد + تخسيس', '350')">اشترك دلوقتي</a>
+      </div>
+
+      <div class="plan plan-vip reveal">
+        <div class="plan-name">برايفت VIP</div>
+        <div class="plan-desc">تدريب خاص واحد لواحد مع الكابتن.</div>
+        <div class="coach">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=200&q=80" alt="Omar Refaiy">
+          <div><b>Coach Omar Refaiy</b><span>مدرب برايفت معتمد</span></div>
+        </div>
+        <div class="plan-price">1000<span> جنيه / شهريًا</span></div>
+        <div class="plan-note">أماكن محدودة كل شهر</div>
+        <ul class="plan-features">
+          <li>تدريب خاص وجهًا لوجه</li>
+          <li>برنامج تمرين وتغذية مخصص 100%</li>
+          <li>متابعة مباشرة ومستمرة مع الكابتن</li>
+        </ul>
+        <a href="#payment" class="btn btn-gold" onclick="selectPlan('برايفت VIP مع Coach Omar Refaiy', '1000')">احجز مكانك</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="payment" id="payment">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">تأكيد الاشتراك</span>
+      <h2 class="section-title">حولت؟ أكد اشتراكك دلوقتي</h2>
+      <p class="section-desc">حول قيمة الاشتراك فودافون كاش، وبعدين املأ البيانات دي عشان نأكد اشتراكك.</p>
+    </div>
+
+    <div class="payment-box reveal">
+      <div class="payment-note">
+        <b>ملحوظة:</b> بعد ما تدوس "تأكيد التحويل"، هيفتحلك واتساب على رقم الكابتن عمر رفاعي برسالة جاهزة ببيانات اشتراكك. كل اللي عليك إنك ترفق صورة إثبات التحويل يدويًا جوه الشات وتبعتها.
+      </div>
+
+      <div class="field">
+        <label>الباقة</label>
+        <select id="selectedPlan">
+          <option value="اشتراك حديد|200">اشتراك حديد - 200 جنيه</option>
+          <option value="حديد + تخسيس|350">حديد + تخسيس - 350 جنيه</option>
+          <option value="برايفت VIP مع Coach Omar Refaiy|1000">برايفت VIP مع Coach Omar Refaiy - 1000 جنيه</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>رقم الهاتف اللي حولت منه</label>
+        <input type="tel" id="transferPhone" placeholder="01xxxxxxxxx">
+      </div>
+
+      <div class="field">
+        <label>صورة إثبات التحويل</label>
+        <div class="file-drop" id="fileDrop">
+          <div class="fd-title" id="fdTitle">اضغط هنا أو اسحب الصورة</div>
+          <div class="fd-sub">هتحتاج ترفعها تاني جوه واتساب بعد ما نفتحلك الشات</div>
+          <input type="file" id="screenshotFile" accept="image/*">
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block" onclick="confirmPayment()">تأكيد التحويل</button>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">تواصل معانا</span>
+      <h2 class="section-title">جاهزين نستقبلك</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>بيانات التواصل</h3>
+
+        <div class="info-row">
+          <span class="label">واتساب / تليفون</span>
+          <a class="value" href="https://wa.me/201090044618" target="_blank">01090044618</a>
+        </div>
+
+        <div class="info-row">
+          <span class="label">العنوان</span>
+          <div class="value dim">كفر طحا - شبين القناطر - القليوبية</div>
+        </div>
+
+        <div class="info-row">
+          <span class="label">مواعيد العمل</span>
+          <div class="value dim">يوميًا من 12 مساءً حتى 12 منتصف الليل</div>
+        </div>
+
+        <div class="social-row">
+          <a href="https://www.facebook.com/profile.php?id=100015047557203&locale=ar_AR" target="_blank" aria-label="فيسبوك">
+            <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@omarrefaiy4" target="_blank" aria-label="تيك توك">
+            <svg viewBox="0 0 24 24"><path d="M16.6 5.82c-.9-.78-1.48-1.89-1.6-3.12h-3.05v13.44c0 1.5-1.22 2.72-2.72 2.72a2.72 2.72 0 0 1-2.72-2.72 2.72 2.72 0 0 1 2.72-2.72c.25 0 .5.03.72.1V10.4a5.8 5.8 0 0 0-.72-.05A5.75 5.75 0 0 0 3.5 16.1a5.75 5.75 0 0 0 5.75 5.75 5.75 5.75 0 0 0 5.75-5.75V8.83a8.14 8.14 0 0 0 4.76 1.52V7.3c-1.03 0-1.99-.33-2.78-.9a5.6 5.6 0 0 1-.38-.58z"/></svg>
+          </a>
+          <a href="https://wa.me/201090044618" target="_blank" aria-label="واتساب">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.87.5 3.63 1.38 5.15L2 22l4.98-1.31A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.06c-1.6 0-3.1-.44-4.38-1.2l-.31-.18-3.02.79.81-2.94-.2-.32A8.04 8.04 0 0 1 3.94 12c0-4.45 3.62-8.06 8.06-8.06s8.06 3.61 8.06 8.06-3.61 8.06-8.06 8.06zm4.42-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe loading="lazy" src="https://www.google.com/maps?q=30.268654,31.300867&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">EL<span class="neon3">3</span>almy GYM</div>
+    <p>© 2026 EL3almy Gym — كفر طحا، شبين القناطر</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
